@@ -6,5 +6,4 @@ int main ()
     printf("\nEste eh meu segundo programa em C\n");
     
     return 0;
-    
 }

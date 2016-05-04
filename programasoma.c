@@ -11,7 +11,7 @@ int main ()
     printf("Digite o segundo numero");
     scanf("%f", &num2);
     
-      soma = num1 + num2;
+    soma = num1 + num2;
     sub = num1 - num2;
     multi = num1 * num2;
     divisao = num1 / num2;

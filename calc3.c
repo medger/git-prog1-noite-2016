@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <math.h>
+
 int main()
 {
     int menu;
@@ -12,7 +14,7 @@ int main()
     
         //menu
         printf("Qual operação você deseja?\n");
-        printf("1-Adição\n");
+        printf("1-Raiz quadrada\n");
         printf("2-Subtração\n");
         printf("3-Subtração\n");
         printf("4-Divisão\n");
@@ -23,29 +25,20 @@ int main()
         printf("Entre com o Primeiro Número:\n");
         scanf("%d", &num1);
         
-         printf("Entre com o Segundo Número:\n");
-        scanf("%d", &num2);
+        
     
         
         switch(menu)
         {
-            case 1://Soma
-                resultado=num1+num2;
-                printf("\nResultado: %d + %d = %.2f", num1, num2, resultado);
+            case 1://raiz
+                resultado = sqrt(num1);
+                printf("\nResultado: raiz de %d  = %.2f", num1,  resultado);
                 break;
             case 2://Subtração
-                resultado=num1-num2;
-                printf("\nResultado: %d - %d = %.2f", num1, num2, resultado);
+                resultado= pow(num1, 2);
+                printf("\nResultado: pot(%d) ao quadrado = %.2f", num1, resultado);
                 break;
-            case 3://Multiplicação
-                resultado=num1*num2;
-                printf("\nResultado: %d * %d = %.2f", num1, num2, resultado);
-                break;
-            case 4://Divisao
-                resultado=(float)num1/num2;
-                printf("\nResultado: %d / %d = %.2f", num1, num2, resultado);
-                break;
-                
+            
         }
         
         printf("\nDeseja Continuar? (1-s/2-n)");

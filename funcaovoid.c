@@ -23,7 +23,7 @@ int main()
     media = media_lasalle(av1, av2, av3);
     
     cabecalho();
-    printf("\nMedia = %f", media);
+    printf("\nMedia = %.2f", media);
     
     return 0;
     

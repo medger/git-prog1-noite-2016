@@ -2,7 +2,7 @@
 int main()
 {
     int num, fat=1, i;
-    printf("digite um numero");
+    printf("Digite um numero\n");
     scanf("%d", &num);
     
     for (i=2;i<=num;i++)
